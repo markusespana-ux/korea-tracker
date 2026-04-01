@@ -518,8 +518,6 @@ function toggleTlDay(ds){
   try{localStorage.setItem('wt_v4_tl',JSON.stringify(tlLogged));}catch(e){}
   renderTimeline();
 }
-  if(todayEl)setTimeout(function(){todayEl.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});},300);
-}
 
 function updatePhase(){
   var d=Math.floor((new Date()-START_DATE)/86400000);
